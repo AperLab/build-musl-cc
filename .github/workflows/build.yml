@@ -15,7 +15,7 @@ jobs:
         repository: 'firasuke/mussel'
 
     - run: |
-        ./mussel -p
+        ./mussel x86-64 -p
         tar -cf toolchain.tar toolchain
 
     - uses: actions/upload-artifact@v4
